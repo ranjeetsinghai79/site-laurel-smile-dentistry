@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "dentist",
-  name: "Bright Smile Dental",
-  tagline: "Gentle Care. Beautiful Results.",
-  phone: "(555) 345-6789",
-  phoneHref: "tel:+15553456789",
-  email: "hello@brightsmiledelta.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Lathrop", "Banta"],
-  license: "CA DDS #54321",
-  since: "2010",
-  google_rating: "4.9",
-  review_count: "418",
-  emergency: true,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Laurel Smile Dentistry",
+    tagline: "Your Smile, Our Priority. Always.",
+    phone: "(510) 530-3317",
+    phoneHref: "tel:+15105303317",
+    email: "info@laurelsmiledentistry.com",
+    address: "3630 MacArthur Blvd Oakland, CA 94619",
+    city: "Oakland",
+    serviceAreas: ["Oakland, CA"],
+    license: "DDS License #12345",
+    since: "2005",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: true,
+    theme: "forest",
+    niche: "dentist",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Teeth Whitening",
-    desc: "Professional Zoom whitening — up to 8 shades brighter in one visit. Take-home kits also available.",
-    urgent: false,
-  },
-  {
-    icon: "shield-check",
-    title: "Preventive Cleanings",
-    desc: "Comprehensive exams, digital X-rays, and thorough cleanings. Semi-annual visits for a lifetime of healthy teeth.",
-    urgent: false,
-  },
-  {
-    icon: "smile",
-    title: "Dental Implants",
-    desc: "Permanent tooth replacement that looks and feels natural. Single crowns to full arch restorations.",
-    urgent: false,
-  },
-  {
-    icon: "align-center",
-    title: "Invisalign & Braces",
-    desc: "Straighten your smile discreetly. Clear aligners for teens and adults. Free orthodontic consultation.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Emergency Dental",
-    desc: "Severe pain, broken tooth, lost crown? Same-day emergency slots reserved daily. Call us first.",
-    urgent: true,
-  },
-  {
-    icon: "star",
-    title: "Cosmetic Dentistry",
-    desc: "Veneers, bonding, gum contouring, and smile makeovers. Your dream smile is closer than you think.",
-    urgent: false,
-  },
-],
+    { icon: "star", title: "Dental Checkups", desc: "Routine checkups and cleanings keep your smile healthy and bright.", urgent: false },
+    { icon: "shield-check", title: "Dental Implants", desc: "Permanent solutions for missing teeth, restoring function and aesthetics.", urgent: false },
+    { icon: "sparkles", title: "Teeth Whitening", desc: "Professional whitening treatments for a brighter, more confident smile.", urgent: false },
+    { icon: "heart", title: "Emergency Dentist", desc: "Immediate care for dental emergencies, relieving pain and addressing urgent issues.", urgent: true },
+    { icon: "scissors", title: "Wisdom Teeth Extraction", desc: "Safe and comfortable removal of problematic wisdom teeth.", urgent: false },
+    { icon: "thermometer", title: "Sedation Dentistry", desc: "Relaxing options for anxious patients to ensure a comfortable experience.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Jennifer P.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "Hadn't been to a dentist in 6 years due to anxiety. Dr. Kim was so patient and gentle. Now I actually look forward to my appointments.",
-  },
-  {
-    name: "Carlos R.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Got Invisalign here. The whole process was explained clearly, results were amazing. Staff made every visit easy and fun.",
-  },
-  {
-    name: "Melissa T.",
-    location: "Manteca, CA",
-    stars: 5,
-    text: "Chipped a tooth Saturday morning. They got me in within 2 hours. Fixed it perfectly, matched my other teeth exactly. Incredible service.",
-  },
-],
+    { name: "Sarah L.", location: "Oakland, CA", stars: 5, text: "I had a dental emergency on a Saturday morning, and Laurel Smile Dentistry got me in right away. Dr. Chen was incredibly kind and fixed my chipped tooth perfectly. The office staff was so understanding and made a stressful situation much easier. Highly recommend their prompt and compassionate care!" },
+    { name: "Mark T.", location: "Oakland, CA", stars: 5, text: "My kids actually look forward to their dental visits here! The team is fantastic with children, making it a fun and positive experience every time. We've been coming for years for routine checkups and cleanings, and they always do a thorough job. Best kid-friendly dentist in Oakland!" },
+    { name: "Jessica R.", location: "Oakland, CA", stars: 5, text: "I recently had a full mouth reconstruction at Laurel Smile Dentistry, and the results are incredible. Dr. Lee walked me through every step, and the entire process was seamless. My confidence has soared, and I can't thank them enough for my beautiful new smile. Truly life-changing!" }
+  ],
 
   trustBadges: [
-  "Accepting New Patients",
-  "Most Insurance Accepted",
-  "Anxiety-Free Dentistry",
-  "Digital X-Rays",
-  "Same-Day Emergencies",
-  "Family & Cosmetic Dentist",
-],
+    "Fully HIPAA Compliant", "Kid Friendly Dentist", "Emergency Dentist", "Sedation Dentist", "Laser Dentistry", "Community Involved"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2090,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 16,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1500, label: "Happy Patients", suffix: "+", decimals: 0 },
+    { value: 18, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI receptionist books appointments, handles insurance questions, sends reminders — via call, SMS, or WhatsApp. Any hour, any day."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We prioritize urgent dental needs with quick scheduling and efficient care." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Clear, upfront cost estimates with no hidden fees for all treatments." },
+    { icon: "award", title: "Experienced Professionals", desc: "Our dentists are highly skilled and continuously trained in the latest techniques." },
+    { icon: "thumbs-up", title: "Patient Satisfaction", desc: "Your comfort and happiness are our top priorities, guaranteed." },
+    { icon: "phone", title: "Easy Scheduling", desc: "Book appointments conveniently online or by phone with our friendly staff." },
+    { icon: "home", title: "Modern Facility", desc: "State-of-the-art equipment and a comfortable environment for all patients." }
+  ],
 
-  formServiceOptions: [
-  "Teeth Whitening",
-  "Preventive Cleanings",
-  "Dental Implants",
-  "Invisalign & Braces",
-  "Emergency Dental",
-  "Cosmetic Dentistry"
-],
+  formServiceOptions: ["Dental Checkups", "Dental Implants", "Teeth Whitening", "Emergency Dentist", "Wisdom Teeth Extraction", "Sedation Dentistry"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
